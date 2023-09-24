@@ -6,12 +6,16 @@
     <title>Formlar</title>
   </head>
   <body>
+    <!-- formlar semantik etiketler bir div gibi düşünebilirsin veri almaya yarayan inputlar özel amaçlı konteynır digerleri genel amaçlı -->
     <h1>Formlar</h1>
 
     <form>
+      <!-- formları genelde form da kullan -->
       <!-- NAME (TEXT)-->
       <section>
         <label for="first-name">Name</label>
+        <!-- required doldurmaden geçemezsin value değer kutu içinde yazar valudeki deki değer input type dediğimizde text dersen yazı number dersen sayı password dersen yıldızlı kapalı degerler url dersen http email dersen mail isaretleri veya girdileri çıkar tırnak içinde tabiki plasholder da gözükür tanımlayıcı bilgi verr en az 8 adet sayı girin gibi name backend egönderilecek zaman kullanılır name ismi ile gider valu ile birlikte-->
+        <!-- inputların type ları : text düz yazı ,password şifre, radio yuvarlak şekil tek seçim , checkbox kare ve birden fazla seçim,number numara, reset reset,submit gönder   -->
         <input type="text" id="first-name" name="firstName" value="" required />
       </section>
       <br />
@@ -38,21 +42,26 @@
           id="password"
           required
           placeholder="en az 8 karakter giriniz"
-          minlength="8"
+        
+           minlength="8"
           maxlength="12"
         />
+          <!-- minlenght en az  rakam maxlength de en fazla rakam -->
       </section>
       <br />
 
       <!-- AGE (NUMBER) -->
       <section>
+        <!-- label buton başındaki yazı input girilecek boş alan bunların yanı label in for ile input id  ler aynı olursa birbirine baglanır -->
         <label for="age">Age</label>
+        <!-- asağidaki name propertisi bekente gidecek kısım sondaki  min en az 0 max en fazla 100 sayı girersin -->
         <input type="number" name="age" id="age" required min="0" max="100" />
       </section>
       <br />
 
       <!-- GENDER (RADIO)-->
       <section>
+        <!-- genderi illa labelde yazmak zorunda değilsin h veya p de yazabilirsin veya section içinde olduğu için direkde yazabilirsin ama diğrleri ile yan yana gelir p veya h de kullan -->
         <label for="">Gender:</label> <br />
         <label for="female">Female</label>
         <input type="radio" name="gender" checked id="female" />
@@ -68,10 +77,14 @@
         <input
           type="checkbox"
           name="languages"
+         
           value="turkce"
           id="languages"
           checked
         />Türkçe <br />
+        
+        <!-- value görünmesini istediğin değer labelle yapınca tıkladığında kutuya gider -->
+        <!-- diğer kullanıminput sonuna direk değeri yazabilirsin -->
         <input
           type="checkbox"
           name="languages"
@@ -101,6 +114,7 @@
       <br />
 
       <!-- SELECT -->
+      <!-- select box cok kullanılır önemli asağı doru acıla lıste select  option seklinde kullanılır -->
       <section>
         <label for="">Favori tatlilar</label> <br />
         <select name="tatli" id="tali">
@@ -134,3 +148,21 @@
     </form>
   </body>
 </html>
+
+
+
+
+<!-- buton inputla da olur buton lada olur butonda araya birseyler yazarsın inputta otomatik gönderli çıkar sn value girere gönder yazısını değiştirebilirsin -->
+
+<!-- submit   type verirsen formu gönderir adrese ve siler-->
+
+
+<!-- requered doldurmadan geçemezsin -->
+
+<!-- butonda type sil yaparsan siler
+type email yazarsan formatı o sekilde olur input type ye -->
+
+<!-- placeholder silik şekilde kutuda yazar isim giriniz dersin -->
+
+<!-- style="resize: none" textareada asaği sagdan çekilebilir normalde bu sekılde kısıtlıyorsun cols="30"
+rows="5" yatay ve dkede kelme sayısı -->

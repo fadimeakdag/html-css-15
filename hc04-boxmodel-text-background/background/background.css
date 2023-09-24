@@ -1,0 +1,75 @@
+
+body{
+    /* overflow: hidden; yatay ve dikey kaydırma çubuğunu gizler yanlızca dikey veya yatay kaldırmak için overflow-y veya -x kullan */
+    
+background-image: linear-gradient(43deg, #4158D0 0%, #C850C0aa 46%, #FFCC70aa 100%),url(./img/resim-2.jpg);
+height: 100vh;
+background-repeat: no-repeat;
+/* backgraund attachment arka planın nasıl durmasını ayarlar fixed sabitliyor kaydrımayı engelliyor */
+background-attachment: fixed;
+background-size: cover;
+background-position: right;
+
+
+
+}
+
+
+.container{
+    border: 2px solid red;
+    width: 20rem; 
+    height: 20em;
+    margin: auto;
+    text-align: justify;
+    padding: 10px;
+    /* border radius köşeleri yuvarlar ve bunu kenarları için 4 değer girebilirsin 15px 50px 30px 5px gibi değişik şekiller oluşur */
+    border-radius: 10px;
+    /* overflaw içerik sığmazsa kutuya taşıma özelliği ekler yanikaydırma çubuğu eklensin yoksa içeriğin tamamını göremezsin */
+    overflow: auto;
+    /* overflow:scroll;  auto ile aynı farkı tam anlamadım aynı etki oluyor */ 
+
+    /* background-image: url(./img/resim-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right; */
+
+    background-image:
+    /* rengi solduruyor veya açıuor renk geçişleri rgba solmayı sağlar geçişlerde */
+    linear-gradient(to left,rgba(255, 0, 0, 0.4),rgba(0, 0, 0, 0.5)),
+    url(./img/resim-2.jpg);
+     /* arka plan resimlerinin boyutunu görüntüsünü ayarlar backgraund size */
+    background-size: cover;
+    background-position: center;
+    color: orange;
+
+}
+/* kaydırma çubuğunu kaldırır aşağıda 3 yöntem var */
+.container::-webkit-scrollbar{
+    /* display: none; */
+    /* visibility: hidden; */
+    width: 0;
+}
+
+img{
+    width: 19%;
+
+}
+
+#img1,
+#img2,
+#img3,
+#img4,
+#img5{
+
+    opacity:0.7;
+}
+
+#img1:hover,
+#img2:hover,
+#img3:hover,
+#img4:hover,
+#img5:hover{
+    opacity: 1;
+    transform: scale(1.5);
+    transition: all 1s;
+}

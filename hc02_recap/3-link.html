@@ -18,9 +18,13 @@
       <h1>CLARUSWAY FULLSTACK</h1>
     </header>
     <nav>
-      <a href="../hc01_recap/1-index.html" target="_blank">Home</a>
+      <!-- bir sayfayı diğer sayfaya tasiyan kink etiketi  a etiketine girilenle altı çizili link olarak gelir target yaparsan home sayfası açık kalır hoe tıkladığında farklı bir sayfa açar normalde home den diğer sayfaya geçmesi lazımdı harici link-->
+      
+      <a href="../hc01_recap/1-index.html" target="_blank">Home</a> 
+      <!-- courses e başınca sayfa içindeki bir yazıya gönder diyeceğim ıd ile . a tag ındeki ıd ile gitmesini istediğin yerin ıd si aynı olursa orya gider ıd si courses di lerini kontrol et -->
       <a href="#courses">Courses</a>
       <a href="#students">Students</a>
+      <!-- aynı dosyada contck html ye bağladı başka dosyay yönlendirdi dahili sayfa contck a verdik -->
       <a href="./contact.html">Contact</a>
     </nav>
 
@@ -105,7 +109,7 @@
           impedit.
         </p>
         <article>
-          <!-- Resme tiklayinca linkin acilmasi -->
+          <!-- Resme tiklayinca linkin acilmasi a nın içine img koyup href içine linki koyuyoruz -->
           <a href="https://clarusway.com" target="_blank">
             <img
               src="https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849825_1280.jpg"
@@ -124,7 +128,7 @@
             <img src="./img/sun.jpeg" alt="sun" />
           </a>
 
-          <!-- Yaziya tiklaninca resmin indirilmesi -->
+          <!-- Yaziya tiklaninca resmin indirilmesi  dawlond ekledi sonuna a yıda div içine aldı resimler inline elementler kaldığı yerden devam eder a da inline element çözmek için konteynıra aldık section article div farketmez bi kutunun içine koyduk inline olmasın aşagıda devam etsin diye-->
           <div>
             <a href="./img/sun.jpeg" download>Resmi indirmek tiklayiniz.</a>
           </div>
@@ -133,8 +137,10 @@
       <br /><br /><br /><br />
 
       <section>
+        <!-- mailto: yazıp mail adresini yazacaksın -->
         <div><a href="mailto:noah@clarusway.com">Mail için tiklayiniz</a></div>
         <br /><br /><br /><br />
+        <!-- tel: yazaıp kodu ile beraber noyu yazıyoruz -->
         <div><a href="tel:+90555 5555555">Aramak için tiklayniz</a></div>
       </section>
 

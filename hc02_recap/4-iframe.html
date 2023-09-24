@@ -6,6 +6,7 @@
     <title>IFRAME</title>
   </head>
   <body>
+    <!-- ıframe kendi siteniz içinde basşka siteden pencere açmanıza izin veriyor. pencere demek güvenli değil site getirmek hızını azaltır haritalarda kullanılır mecbur googlden para ile alıp ıd ilede yapabilirsin -->
     <h1>IFRAME</h1>
 
     <div>
@@ -14,7 +15,7 @@
         frameborder="0"
         width="600px"
         height="300px"
-      ></iframe> -->
+      ></iframe>   600 px e 300 px llik clarusway sitesini getiriyor ama artık kullanılmıyor harita video içiv kullanılabilir clarusway in sayfasındaki videolar gibi  src içine adresi yazıyoruz-->
 
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d65356.04088548251!2d28.9686824096955!3d41.003119072917464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab88a6b1a7fc5%3A0x2a8426d49e0a222a!2zS2FkxLFrw7Z5IE1vZGEgU2FoaWwgUGFya8SxIHZlIFnDvHLDvHnDvMWfIFlvbHU!5e0!3m2!1sen!2str!4v1695147699769!5m2!1sen!2str"
@@ -22,9 +23,11 @@
         height="400px"
         style="border: 2"
         allowfullscreen=""
+       
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
+      
 
       <br /><br />
       <iframe
@@ -36,11 +39,18 @@
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
       ></iframe>
+      <!-- allowfullscreen buyutme özelliği katıyor bu remotta olan video -->
+
+      
     </div>
 
     <br /><br />
 
     <div>
+      <!-- yerelde video yükleme -->
+      <!-- assets klasörü kendi istediğini resimler videolar kulasörü best praktisde adı bu -->
+      <!-- audio ile dinleti ekleyebilirsin ama controls src arasına koymalısın dinlemek için -->
+      <!-- with i style da alıyor sadece  -->
       <audio controls src="./assets/Memleketim.mp3" style="width: 600px">
         Dinle
       </audio>
@@ -48,7 +58,9 @@
 
     <br /><br />
     <div>
+      <!-- videoyuda video etiketi ile yapabilirsin control src oynatma kısmınıgöstermek için  -->
       <video controls src="./assets/Su.mp4">Video</video>
     </div>
   </body>
 </html>
+<!-- loding lazy sitenin hıznı yavaşlatmama adına koyuyorsun hemen yüklenmiyor sayfadakiler sonradan yükleniyor -->
